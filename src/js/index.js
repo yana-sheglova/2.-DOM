@@ -1,11 +1,11 @@
 import '../css/style.css';
 import goblinImage from '../goblin.png';
 
-const grid = document.createElement('div');
-grid.classList.add('grid');
-document.body.appendChild(grid);
-
 function createBoard() {
+    const grid = document.createElement('div');
+    grid.classList.add('grid');
+    document.body.appendChild(grid);
+
     for (let i = 0; i < 16; i++) {
         const cell = document.createElement('div');
         cell.classList.add('cell');
